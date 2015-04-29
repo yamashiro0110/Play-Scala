@@ -9,7 +9,7 @@ import play.api.mvc.{Action, Controller}
 object SampleController extends Controller {
 
   def index = Action {
-    val usr = User.findById(0).getOrElse(User.notFound)
+    val usr = User.findById(1).getOrElse(User.notFound)
     Ok("Call SampleController index!! -> " + usr.name)
   }
 
